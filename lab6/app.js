@@ -17,6 +17,6 @@ app.get("/venus", function(req, res) {
 });
 
 //server listeners
-app.listen("8081", "127.0.0.1", function() {
+app.listen(process.env.PORT, process.env.IP, function() {
     console.log("Express Server is running...");
 })
